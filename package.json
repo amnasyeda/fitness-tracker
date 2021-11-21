@@ -1,0 +1,23 @@
+{
+  "name": "fitness-tracker",
+  "version": "1.0.0",
+  "description": "Fitness Tracker using a Mongo database with a Mongoose schema and handle routes with Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amnasyeda/fitness-tracker.git"
+  },
+  "author": "Amna Syeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amnasyeda/fitness-tracker/issues"
+  },
+  "homepage": "https://github.com/amnasyeda/fitness-tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
