@@ -1,6 +1,5 @@
 # Description 
-
-This is a Mongo database with a Mongoose schema and handles routes with Express. [Link to Heroku application here!](https://fit-ness.herokuapp.com/)
+This is a Mongo database with a Mongoose schema and handles routes with Express. [Link to Heroku application here!](https://track-your-fitness.herokuapp.com/)
 
 # Table of Contents
 * [Installation](#installation)
