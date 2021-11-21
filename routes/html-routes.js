@@ -1,3 +1,5 @@
+// Gotta link the front-end html pages. Need path module to navigate.
+
 const path = require("path");
 
 module.exports = function (app) {

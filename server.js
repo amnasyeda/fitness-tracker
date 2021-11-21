@@ -5,8 +5,8 @@ const mongoose = require("mongoose");
 // Sets up port for server, either on Heroku or localhost:3000.
 const PORT = process.env.PORT || 3000;
 
-// This requires userModel to create a new user.
-const User = require("./userModel.js");
+// This requires all of our models from the models folder.
+const db = require("./models"); //don't need it?
 const app = express();
 
 app.use(logger("dev"));
@@ -17,22 +17,13 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // MongoDB_URI referenced in .env
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
-// App on "submit" will create a new body?
-app.post("/submit", ({ body }, res) => {
-    User.create(body)
-        .then(dbUser => {
-            res.json(dbUser);
-        })
-        .catch(err => {
-            res.json(err);
-        });
-});
-
+// Require the routes so the app knows what to load
 require("./routes/api-routes")(app);
 require("./routes/html-routes")(app);
 
+// Start the server
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
 });
