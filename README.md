@@ -1,16 +1,22 @@
-# MongoDB Nosql Homework: Workout Tracker
+# Description 
 
 This is a Mongo database with a Mongoose schema and handles routes with Express. [Link to Heroku application here!](https://fit-ness.herokuapp.com/)
 
-## User Story
+# Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Links](#links)
+* [Tools](#tools)
+* [Credits](#credits)
+* [License](#license)
 
+## Installation 
+The user will clone the repository and run `npm install` in the root, client, and server directories. This will be followed by running `npm start` in order to connect to the server. 
+
+## Usage
 * As a user, I want to be able to view create and track daily workouts.
 
-## Business Context
-
 A consumer will reach their fitness goals quicker when they track their workout progress.
-
-## Acceptance Criteria
 
 <img src="./img/Screenshot_4.png" width="100%">
 <img src="./img/Screenshot_5.png" width="100%">
@@ -32,6 +38,18 @@ Latest Workout Displayed
   Total sets performed: 1 set
   Total reps performed: 10
 
-### Issues
+## Links
 
-Today I learned that I only needed 1 Schema-- Workout. Also, I am currently working on the stats page and Total Workout Duration-- this stat is currently undefined. **EDIT** The public folder was missing the definition for totalDuration!!! Had to add it. **EDIT** API-routes need to be in a certain order sometimes! The :id considered "range" as an id. 
+## Tools
+* MongoDB
+* Mongoose
+* MongoDB Atlas 
+* Express
+* Morgan
+
+## Credits
+* Completed by: [Amna Syeda](https://github.com/amnasyeda)
+
+## License
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[ISC License](https://www.isc.org/licenses/)
